@@ -22,8 +22,7 @@
     "@vue/compiler-sfc": "^3.0.0",
     "babel-eslint": "^10.1.0",
     "eslint": "^6.8.0",
-    "eslint-plugin-vue": "^7.0.0-0",
-    "sass-loader": "^11.0.1"
+    "eslint-plugin-vue": "^7.0.0-0"
   },
   "eslintConfig": {
     "root": true,
@@ -44,6 +43,6 @@
     "last 2 versions",
     "not dead"
   ],
-  "_id": "diman-notepad@0.1.0",
+  "_id": "notepad-site@0.1.0",
   "readme": "ERROR: No README data found!"
 }
