@@ -7,6 +7,9 @@
 <script>
 export default {
   name: "NotFoundPage",
+    created() {
+    this.$emit(`update:layout`, 'div');
+  },
 };
 </script>
 

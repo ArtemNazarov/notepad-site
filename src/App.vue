@@ -1,9 +1,20 @@
 <template>
-  <router-view/>
+  <component :is="layout">
+    <router-view v-model:layout="layout" />
+  </component>
 </template>
 
 <script>
-// import "bulma/bulma.sass";
+// import Layout from "./components/layout/Layout.vue";
+
+export default {
+  name: `App`,
+  data() {
+    return {
+      layout: `div`,
+    };
+  },
+};
 </script>
 
 
