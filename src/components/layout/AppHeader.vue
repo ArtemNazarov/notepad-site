@@ -8,6 +8,16 @@
 <script>
 export default {
   name: "AppHeader",
+  data() {
+    return {
+      isBurgerActive: false,
+    };
+  },
+  methods: {
+    toggleBurger() {
+      this.isBurgerActive = !this.isBurgerActive;
+    },
+  },
 };
 </script>
 
