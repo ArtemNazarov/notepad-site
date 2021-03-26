@@ -1,8 +1,12 @@
-import { createApp } from 'vue';
+import Vue from 'vue'
 import App from './App.vue';
-import router from './router';
+import VueRouter from 'vue-router';
 import './assets/global.css';
+import VueFullPage from 'vue-fullpage'
 
-createApp(App)
-    .use(router)
-    .mount('#app');
+Vue.use(VueRouter);
+Vue.use(VueFullPage)
+
+new Vue({
+    render: h => h(App),
+}).mount('#app');
