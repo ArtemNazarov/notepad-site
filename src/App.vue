@@ -1,7 +1,9 @@
 <template>
-  <component :is="layout">
-    <router-view v-model:layout="layout" />
-  </component>
+  <div id="app">
+    <component :is="layout">
+      <router-view :layout="layout" />
+    </component>
+  </div>
 </template>
 
 <script>
