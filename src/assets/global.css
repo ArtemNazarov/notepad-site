@@ -24,7 +24,7 @@ main {
     flex-grow: 1;
 }
 
-header,
+#nav,
 main,
 footer {
     flex-shrink: 0;
