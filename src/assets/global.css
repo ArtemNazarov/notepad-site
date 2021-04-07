@@ -20,8 +20,6 @@ body {
   min-height: 100vh;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
 }
 
 
@@ -33,4 +31,17 @@ header,
 main,
 footer {
   flex-shrink: 0;
+}
+
+header {
+  text-align: right;
+}
+
+footer {
+  color: #2c3e50;
+}
+
+main,
+footer {
+  text-align: center;
 }

@@ -1,7 +1,21 @@
 <template>
   <header>
-    <router-link to="/">Home</router-link>&nbsp;
-    <router-link to="/about">Help</router-link>
+    <div id="logo">
+      <a href="/">
+        <img
+          src="../assets/logo_192x192.png"
+          width="64"
+          height="64"
+          alt="Notepad logo"
+        />
+      </a>
+    </div>
+    <div id="links">
+      <div><router-link to="/">Home</router-link>&nbsp;</div>
+      <div>
+        <router-link to="/about">Help</router-link>
+      </div>
+    </div>
   </header>
 </template>
 
@@ -23,17 +37,47 @@ export default {
 
 <style>
 header {
-  padding: 30px;
-  box-shadow: 0 1px 1px rgba(0,0,0,0.3)
+  display: grid;
+  grid-auto-flow: column;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
 }
 
 header a {
   font-weight: bold;
+  font-size: 24px;
   color: #2c3e50;
   text-decoration: none;
+  padding: 30px;
+}
+
+#links a:hover,
+#links a:focus {
+  background-color: #f5f5f5;
 }
 
 header a.router-link-exact-active {
-  color: #42b983;
+  color: #0821ff;
+}
+
+#logo {
+  display: grid;
+  justify-content: start;
+  align-content: center;
+}
+
+#logo img {
+  border-radius: 4px;
+}
+
+#logo a {
+  background-color: #0821ff;
+}
+
+#links {
+  display: grid;
+  justify-content: right;
+  align-content: center;
+  grid-auto-flow: column;
+  margin-right: 90px;
 }
 </style>
