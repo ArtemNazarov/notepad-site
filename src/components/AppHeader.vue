@@ -69,15 +69,15 @@ header a.router-link-exact-active {
   border-radius: 4px;
 }
 
-#logo a {
-  background-color: #0821ff;
-}
-
 #links {
   display: grid;
   justify-content: right;
   align-content: center;
   grid-auto-flow: column;
   margin-right: 90px;
+}
+
+img {
+  filter: drop-shadow(4px 3px 6px #aaa);
 }
 </style>
